@@ -93,10 +93,10 @@ const page = () => {
 
      
      </div>
-     <footer className='flex justify-center items-center my-40'>
+     <footer className='flex justify-center items-center my-40 '>
 
        
-        <p>© 2023 Rana Ammar  Inc. All rights reserved.</p>
+        <p className=' font-bold'>© 2023 Rana Ammar  Inc. All rights reserved.</p>
        
      </footer>
      
