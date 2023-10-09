@@ -8,8 +8,8 @@ body{
 }
 
 .description{
-    margin: auto;
-
+    display: flex;
+  margin: auto;
 }
 .complete{
     margin-left: 444px;
