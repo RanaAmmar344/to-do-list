@@ -42,7 +42,7 @@ const page = () => {
         <h3 className='1xl'>{t.disk}</h3>
     
       </div >
-      <div className='complete'>
+      <div className='complete mx-3'>
       <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" className=" check nw rx adp afv ayh bnr mx-2 mb-3 p-4  "></input>
       <label for="comments" class="awe axv">Complete</label>
 
