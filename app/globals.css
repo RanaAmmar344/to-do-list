@@ -9,7 +9,8 @@ body{
 
 .description{
     display: flex;
-  margin: auto;
+  
+margin-left: 499px;
 }
 .complete{
     margin-left: 444px;

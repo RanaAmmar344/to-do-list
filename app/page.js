@@ -104,7 +104,7 @@ const page = () => {
       <div className='flex  '>
 
       <h1 className=' font-bold  text-red-500 text-start font-2xl text-bold'>Title</h1>
-      <h1 className=' font-bold  text-red-500 description mx-12 font-2xl text-bold '> Description</h1>
+      <h1 className=' font-bold    text-red-500 description mx-12 font-2xl text-bold '> Description</h1>
       </div>
       <ul>
         {renderTask}
