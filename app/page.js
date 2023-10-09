@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FiDelete} from "react-icons/fi";
+// import { MdDoneOutline} from "react-icons/md";
 
 
 
@@ -11,6 +12,8 @@ const page = () => {
    const [title, setTitle] =useState('')
    const[disk, setDisk] = useState('')
    const [mainTask, setMaintask] = useState([])
+   
+
 
    const submithHandler =(e)=>{
 
@@ -26,9 +29,10 @@ const page = () => {
  
  
   let renderTask = <h3> No Task Available "Add Some Task"</h3>
+ 
    if(mainTask .length>0){
     renderTask = mainTask.map((t,i)=>{
-
+    
       return (
         <li key={i} className=' flex justify-between  items-center   '>
 
@@ -37,7 +41,13 @@ const page = () => {
         <h2 className='text-bold font-bold text-2xl'>{t.title}</h2>
         <h3 className='1xl'>{t.disk}</h3>
     
+      </div >
+      <div className='complete'>
+      <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" className=" check nw rx adp afv ayh bnr mx-2 mb-3 p-4  "></input>
+      <label for="comments" class="awe axv">Complete</label>
+
       </div>
+
       <button onClick={ ()=>{
         deleteHandler(i)
       }} className='            bg-red-600 text-white rounded  px-3 py-2 font-bold mb-2 '> <FiDelete/></button>
@@ -54,6 +64,11 @@ const page = () => {
     setMaintask(copyData)
 
    }
+  
+   
+  
+  
+ 
 
   return (
     
@@ -86,7 +101,11 @@ const page = () => {
      </form>
      <hr/>
      <div className=' p-8 bg-slate-200'>
-      <h1 className=' font-bold  text-center font-2xl text-bold '> Your All Task</h1>
+      <div className='flex  '>
+
+      <h1 className=' font-bold  text-red-500 text-start font-2xl text-bold'>Title</h1>
+      <h1 className=' font-bold  text-red-500 description mx-12 font-2xl text-bold '> Description</h1>
+      </div>
       <ul>
         {renderTask}
       </ul>
@@ -106,3 +125,4 @@ const page = () => {
 }
 
 export default page
+
